@@ -11,7 +11,7 @@ Let's get started with CLRS Chapter 3: Growth of Functions.
 
 We define $$\mathcal{\Theta}(g(n))=\{f(n):\exists c_1, c_2, n_0\geq 0, 0\leq {c}_{1}g(n)\leq f(n) \leq c_{2}g(n) \forall n\geq{n_0}\}$$
 
-This means that \(\mathcal{\Theta}\) is the _set_ of functions that are bounded by scaled function \(g(n)\) above and below as \(n\rightarrow \infty\). Take as an example the function \(2x^2\) show in blue:
+This means that \\(\mathcal{\Theta}\\) is the _set_ of functions that are bounded by scaled function \\(g(n)\\) above and below as \(n\rightarrow \infty\). Take as an example the function \(2x^2\) show in blue:
 
 
 ```python
