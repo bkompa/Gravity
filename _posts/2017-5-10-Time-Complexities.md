@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CLRS Chapter 3: Time Complexities
+title: Time Complexities
 ---
 
 ### Welcome to my first real post ###
