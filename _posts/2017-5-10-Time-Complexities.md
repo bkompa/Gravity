@@ -29,7 +29,7 @@ plt.show()
 ```
 
 
-![png](TimeComplexities_files/TimeComplexities_1_0.png)
+![png](Images/TimeComplexities_1_0.png)
 
 
 We have bounded the blue function, \\(2x^2\\) with the function \\(g(x)=x^2\\) and constants \\(c_1=.5, c_2=4\\). That means \\(2x^2\in\mathcal(\Theta)(x^2)\\). Most people abused the notation here and just write \\(2x^2=\mathcal(\Theta)(x^2)\\). We now have an **asymptotically tight bound** for \\(2x^2\\).
