@@ -2,7 +2,7 @@
 layout: post
 title: Time Complexities
 ---
-
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 ### Welcome to my first real post ###
 <sub><sup>Please let the "unsafe" javascript run so you can see all the cool math! Working on a workaround for this</sup></sub>
 As stated in my introduction, I'll be covering CLRS and MLPP (not a standard acronym, but it will be for this blog!)
