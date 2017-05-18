@@ -5,7 +5,7 @@ title: Time Complexities
 <script type="text/javascript" async="async"
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML,Safe">
 </script>
-### Welcome to my first real post ###
+### Welcome to my first A real post ###
 <sub><sup>Please let the "unsafe" javascript run so you can see all the cool math! Working on a workaround for this</sup></sub>
 As stated in my introduction, I'll be covering CLRS and MLPP (not a standard acronym, but it will be for this blog!)
 
