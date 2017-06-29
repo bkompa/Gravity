@@ -2,7 +2,7 @@
 layout: post
 title: Time Complexities
 ---
-### Welcome to my first B real post ###
+### Welcome to my first real post ###
 As stated in my introduction, I'll be covering CLRS and MLPP (not a standard acronym, but it will be for this blog!)
 
 Let's get started with CLRS Chapter 3: Growth of Functions. 
