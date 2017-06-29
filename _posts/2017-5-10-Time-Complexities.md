@@ -2,11 +2,7 @@
 layout: post
 title: Time Complexities
 ---
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default,Safe">
-</script>
 ### Welcome to my first B real post ###
-<sub><sup>Please let the "unsafe" javascript run so you can see all the cool math! Working on a workaround for this</sup></sub>
 As stated in my introduction, I'll be covering CLRS and MLPP (not a standard acronym, but it will be for this blog!)
 
 Let's get started with CLRS Chapter 3: Growth of Functions. 
