@@ -36,10 +36,7 @@ Now I'll start our parade through the jungle of statistical distributions. There
 
 ### Binomial and Bernoulli Distributions ### 
 
-Imagine a coin that lands heads with a probability $\theta$. Let $X$ be the random variable representing the flip. Then we can use the Bernoulli distribution to describe this single coin flip: <br/>$$\mathrm{Ber}(x|\theta)= \theta^{x==1}(1-\theta)^{x==0}$$<br/>
-
-If we now let $X$ be the number of heads in $N$ trials then $X\in\{0,1,...,N\}$ and we use a Binomial distribution to characterize the probabilities that $X$ takes on any particular value. The probability mass function of the Binomial distribution is: <br/>$$\mathrm{Bin}(X|n,\theta) = {n\choose x}{\theta}^x(1-\theta)^{n-x}$$<br/>The mean of the distribution is $n\theta$ and the variance is $n\theta(1-\theta)$.
-
+Imagine a coin that lands heads with a probability $\theta$.Let $X$ be the random variable representing the flip. 
 Below you can see the probability mass function for a binomial distribution with $n=10$ and $\theta=.5$.
 
 
