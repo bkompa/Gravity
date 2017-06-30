@@ -9,7 +9,7 @@ Anyways, enough about me and sorry for the delay. Today, I'll be covering chapte
 # Introduciton: Basic Review of Probability Concepts #
 When we talk about a probability $p(A)$ we are considering the chance that the event $A$ happens. Quickly we can see that $0\leq p(A)\leq{1}$. $p(A)=1$ means that event $A$ will always happen, while $p(A)=0$ means event $A$ will never happen. Most events will lay somewhere in between.
 
-A few more basic rules: 
+A few more basic rules: <br/>
 **Rule 1** <br/>
 $p(A\cup{B}) = p(A) + p(B) - p(A\cap{B})$
 <br/>
@@ -20,18 +20,14 @@ $p(A,B) = p(A|B)p(B)$ <br/>
 This states that the joint probability of A and B is equal to the probability that A occurs, given($|$) that B occurs times the probability that $B$ happens. 
 We can rearrange this rule and see $p(A|B) = \frac{p(A,B)}{p(B)}$. 
 
-Rule 3 <br/> 
+**Rule 3** <br/> 
 
 Baye's rule is perhaps the most important relation in statistics. 
 Baye's rule (or theorem) states: <br/>
 $$p(X=x|Y=y) = \frac{p(Y=y|X=x)p(X=x)}{\sum_{x'}p(X=x')p(Y=y|X=x')} $$ <br/>
 We can break this down into the likelihood,prior,and posterior. Let's go through these one by one. 
 
-The **prior** is $p(X=x)$ in the numerator. This represents our initial beliefs of the proability of $X$. What Baye's rule does is it updates our beliefs about $X$ given that $Y=y$ occurs. 
-
-The **likelihood** is $p(Y=y|X=x)$ in the numerator. This represents the probability (or likelihood) that $Y=y$ occurs given our initial beliefs about $X$. Note that when you multiply the prior and likelihood together, Rule 2 above applies. The numerator is the joint proability $p(Y=y, X=x)$.
-
-The **posterior** is the left hand side (LHS) of the equation $p(X=x|Y=y)$. It's an update on the proability of X given that we have observed $Y$, which depends on X. 
+The **prior** is $p(X=x)$ in the numerator. This represents our initial beliefs of the proability of $X$. What Baye's rule does is it updates our beliefs about $X$ given that $Y=y$ occurs. The **likelihood** is $p(Y=y|X=x)$ in the numerator. This represents the probability (or likelihood) that $Y=y$ occurs given our initial beliefs about $X$. Note that when you multiply the prior and likelihood together, Rule 2 above applies. The numerator is the joint proability $p(Y=y, X=x)$. The **posterior** is the left hand side (LHS) of the equation $p(X=x|Y=y)$. It's an update on the proability of X given that we have observed $Y$, which depends on X. 
 
 The term I neglected is the denominator. I know what you're thinking: "Ben HOW could you forget about the denominator." I get it. I really do. But by using Rule 2, we can see the denominator is the marginal likelihood of $Y$, $p(Y)$. This is a normalization constant so that $\int_{y}p(X=x|Y=y)dx = 1$.
 
