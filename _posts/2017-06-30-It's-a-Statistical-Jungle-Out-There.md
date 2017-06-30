@@ -10,12 +10,12 @@ Anyways, enough about me and sorry for the delay. Today, I'll be covering chapte
 When we talk about a probability $p(A)$ we are considering the chance that the event $A$ happens. Quickly we can see that $0\leq p(A)\leq{1}$. $p(A)=1$ means that event $A$ will always happen, while $p(A)=0$ means event $A$ will never happen. Most events will lay somewhere in between.
 
 A few more basic rules: 
-Rule 1 <br/>
+**Rule 1** <br/>
 $p(A\cup{B}) = p(A) + p(B) - p(A\cap{B})$
 <br/>
 This states that the probability of A or ($\cup$) B is equal to the proabilities of $A$ and $B$ minus the probability that both $A$ and($\cap$) $B$ happen. This makes sense -- we don't want to double count an event in the space $A$ or double count an event in space $B$ because it's in both spaces. 
 
-Rule 2 <br/>
+**Rule 2** <br/>
 $p(A,B) = p(A|B)p(B)$ <br/>
 This states that the joint probability of A and B is equal to the probability that A occurs, given($|$) that B occurs times the probability that $B$ happens. 
 We can rearrange this rule and see $p(A|B) = \frac{p(A,B)}{p(B)}$. 
@@ -23,7 +23,7 @@ We can rearrange this rule and see $p(A|B) = \frac{p(A,B)}{p(B)}$.
 Rule 3 <br/> 
 
 Baye's rule is perhaps the most important relation in statistics. 
-Baye's rule (or theorem) states:
+Baye's rule (or theorem) states: <br/>
 $$p(X=x|Y=y) = \frac{p(Y=y|X=x)p(X=x)}{\sum_{x'}p(X=x')p(Y=y|X=x')} $$
 We can break this down into the likelihood,prior,and posterior. Let's go through these one by one. 
 
