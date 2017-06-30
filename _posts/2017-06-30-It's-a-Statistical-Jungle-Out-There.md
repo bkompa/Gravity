@@ -14,14 +14,14 @@ A few more basic rules:
 This states that the probability of A or ($\cup$) B is equal to the proabilities of $A$ and $B$ minus the probability that both $A$ and($\cap$) B happens. This makes sense -- we don't want to double count an event in the space $A$ or double count an event in space $B$ because it's in both spaces. 
 
 2. $p(A,B) = p(A|B)p(B)$
-This states that the joint probability of A and B is equal to the probability that A occurs, given($|$) that B occurs _times_ the probability that $B$ happens. 
+This states that the joint probability of A and B is equal to the probability that A occurs, given($|$) that B occurs times the probability that $B$ happens. 
 We can rearrange this rule and see $p(A|B) = \frac{p(A,B)}{p(B)}$. 
 
 3. Baye's Rule (aka the B.A.E. rule) 
 Baye's rule is perhaps the most important relation in statistics. I couldn't help with the Before Anything Else joke. 
 Baye's rule (or theorem) states:
 $$p(X=x|Y=y) = \frac{p(Y=y|X=x)p(X=x)}{\sum_{x'}p(X=x')p(Y=y|X=x')} $$
-We can break this down into the _likelihood_,_prior_,and _posterior_. Let's go through these one by one. 
+We can break this down into the likelihood,prior,and posterior. Let's go through these one by one. 
 
 The **prior** is $p(X=x)$ in the numerator. This represents our initial beliefs of the proability of $X$. What Baye's rule does is it updates our beliefs about $X$ given that $Y=y$ occurs. 
 
