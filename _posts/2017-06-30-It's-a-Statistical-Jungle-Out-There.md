@@ -24,7 +24,7 @@ Rule 3 <br/>
 
 Baye's rule is perhaps the most important relation in statistics. 
 Baye's rule (or theorem) states: <br/>
-$$p(X=x|Y=y) = \frac{p(Y=y|X=x)p(X=x)}{\sum_{x'}p(X=x')p(Y=y|X=x')} $$
+$$p(X=x|Y=y) = \frac{p(Y=y|X=x)p(X=x)}{\sum_{x'}p(X=x')p(Y=y|X=x')} $$ <br/>
 We can break this down into the likelihood,prior,and posterior. Let's go through these one by one. 
 
 The **prior** is $p(X=x)$ in the numerator. This represents our initial beliefs of the proability of $X$. What Baye's rule does is it updates our beliefs about $X$ given that $Y=y$ occurs. 
