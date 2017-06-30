@@ -126,7 +126,7 @@ plt.show()
 
 ### Student's t distribution ### 
 
-The Gaussian distribution has at least one problem: it needs to eat a hamburger. That's right, it's too skinny. Specifically, it's tails are too skinny. This means a Gaussian distribution is very sensitive to outliers. To solve this, we use a t distribution. 
+The Gaussian distribution has at least one problem: it needs to eat a hamburger. That's right, it's too skinny. Specifically, it's tails are too skinny. This means a Gaussian distribution is very sensitive to outliers. To solve this, we use a t distribution. It's pmf is: <br/>$$\mathcal{T}(x|\mu, \sigma^2, \nu) \propto (1+\frac{1}{\nu}(\frac{x-\mu}{\sigma})^2)^{\frac{-\nu-1}{2}}$$ <br/>
 
 
 ```python
