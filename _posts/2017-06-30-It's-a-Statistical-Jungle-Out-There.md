@@ -38,8 +38,7 @@ Now I'll start our parade through the jungle of statistical distributions. There
 
 Imagine a coin that lands heads with a probability $\theta$.Let $X$ be the random variable representing the flip. Then we can use the Bernoulli distribution to describe this single coin flip: <br/>$$\mathrm{Ber}(x|\theta)= \theta^{x==1}(1-\theta)^{x==0}$$<br/>
 <br/> If we now let $X$ be the number of heads in $N$ trials then $X\in\{0,1,...,N\}$ and we use a Binomial distribution to characterize the probabilities that $X$ takes on any particular value. The probability mass function of the Binomial distribution is: <br/>$$\mathrm{Bin}(X|n,\theta) = {n\choose x}{\theta}^x(1-\theta)^{n-x}$$<br/>
-<br/>
-Below you can see the probability mass function for a binomial distribution with $n=10$ and $\theta=.5$.
+The mean of the distribution is $n\theta$ and the variance is $n\theta(1-\theta)$. Below you can see the probability mass function for a binomial distribution with $n=10$ and $\theta=.5$.
 
 
 
@@ -127,7 +126,7 @@ plt.show()
 
 ### Student's t distribution ### 
 
-The Gaussian distribution has at least one problem: it needs to eat a hamburger. That's right, it's too skinny. Specifically, it's tails are too skinny. This means a Gaussian distribution is very sensitive to outliers. To solve this, we use a t distribution. It's pmf is: <br/>$$\mathcal{T}(x|\mu, \sigma^2, \nu) \propto (1+\frac{1}{\nu}(\frac{x-\mu}{\sigma})^2)^{\frac{-\nu-1}{2}}$$ <br/>It has mean $\mu$ and variance $\frac{\nu\sigma^2}{(\nu-2)}$. $\nu$ is the "degrees of freedom" of the distribution. In common applications of the t distribution this is often 1 less than the sample size. 
+The Gaussian distribution has at least one problem: it needs to eat a hamburger. That's right, it's too skinny. Specifically, it's tails are too skinny. This means a Gaussian distribution is very sensitive to outliers. To solve this, we use a t distribution. 
 
 
 ```python
