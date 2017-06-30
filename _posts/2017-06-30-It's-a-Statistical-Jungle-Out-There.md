@@ -10,7 +10,8 @@ Anyways, enough about me and sorry for the delay. Today, I'll be covering chapte
 When we talk about a probability $p(A)$ we are considering the chance that the event $A$ happens. Quickly we can see that $0\leq p(A)\leq{1}$. $p(A)=1$ means that event $A$ will always happen, while $p(A)=0$ means event $A$ will never happen. Most events will lay somewhere in between.
 
 A few more basic rules: 
-1. $p(A\cup{B}) = p(A) + p(B) - p(A\cap{B})$
+1. $p(A\cup{B}) = p(A) + p(B) - p(A\cap{B})$  
+Test 
 This states that the probability of A or ($\cup$) B is equal to the proabilities of $A$ and $B$ minus the probability that both $A$ and($\cap$) B happens. This makes sense -- we don't want to double count an event in the space $A$ or double count an event in space $B$ because it's in both spaces. 
 
 2. $p(A,B) = p(A|B)p(B)$
