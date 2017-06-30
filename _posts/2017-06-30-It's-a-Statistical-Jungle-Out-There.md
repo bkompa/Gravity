@@ -26,10 +26,6 @@ Baye's rule is perhaps the most important relation in statistics.
 Baye's rule (or theorem) states: <br/>
 $$p(X=x|Y=y) = \frac{p(Y=y|X=x)p(X=x)}{\sum_{x'}p(X=x')p(Y=y|X=x')} $$ <br/>
 
-The **prior** is $p(X=x)$ in the numerator. This represents our initial beliefs of the proability of $X$. What Baye's rule does is it updates our beliefs about $X$ given that $Y=y$ occurs. The **likelihood** is $p(Y=y|X=x)$ in the numerator. This represents the probability (or likelihood) that $Y=y$ occurs given our initial beliefs about $X$. Note that when you multiply the prior and likelihood together, Rule 2 above applies. The numerator is the joint proability $p(Y=y, X=x)$. The **posterior** is the left hand side (LHS) of the equation $p(X=x|Y=y)$. It's an update on the proability of X given that we have observed $Y$, which depends on X.
-
-The term I neglected is the denominator. I know what you're thinking: "Ben HOW could you forget about the denominator." I get it. I really do. But by using Rule 2, we can see the denominator is the marginal likelihood of $Y$, $p(Y)$. This is a normalization constant so that $\int_{y}p(X=x|Y=y)dx = 1$.
-
 ### Means, Moments, and Variances, Oh My! ### 
 
 Before we get into the jungle of statistical distributions that exist, I'm going to take a detour and explain how to calculate _moments_ of a distribution. The $n^{th}$ moment of a distribution is defined as: $$ \int x^np(x)dx $$ Moments are important because, among other things, the first and second moments are the mean and variance. Therefore the mean of a distribution is: $$ \int xp(x)dx $$ and the variance is $$ \int x^2p(x)dx $$. Naturally, we have the standard deviation as the square root of the variance. 
