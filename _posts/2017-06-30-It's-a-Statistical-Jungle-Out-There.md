@@ -1,6 +1,6 @@
 ---
 layout: post
-title: It's a Statistical Jungle Out There 
+title: It's a (Statistical) Jungle Out There 
 ---
 Whew, I hope you had enough time to digest my last blog post there. It's only been 6 weeks since my original post. Since then, I've wrangled MathJax to play nicely with Github blogs, so you should be able to enjoy the LaTeX the way it was meant to be seen. 
 
