@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: It's a Statistical Jungle Out There 
+---
 Whew, I hope you had enough time to digest my last blog post there. It's only been 6 weeks since my original post. Since then, I've wrangled MathJax to play nicely with Github blogs, so you should be able to enjoy the LaTeX the way it was meant to be seen. 
 
 Anyways, enough about me and sorry for the delay. Today, I'll be covering chapter 2 of MLPP (Machine Learning: A Probabilistic Perspective by Kevin Murphy for those who aren't hip to my lingo). It's a basic overview of some statistical concepts and the myriad of statistical distributions that are common in machine learning. 
@@ -62,7 +65,7 @@ plt.show()
 ```
 
 
-![png](StatisticalJungle_files/StatisticalJungle_3_0.png)
+![png](https://github.com/bkompa/bkompa.github.io/raw/master/images/StatisticalJungle_3_0.png)
 
 
 ### Multinomial and Multinoulli distributions ### 
@@ -103,7 +106,7 @@ plt.show()
 ```
 
 
-![png](StatisticalJungle_files/StatisticalJungle_5_0.png)
+![png](https://github.com/bkompa/bkompa.github.io/raw/master/images/StatisticalJungle_5_0.png)
 
 
 ### The King of the Jungle: The Gaussian Distribution ### 
@@ -124,7 +127,8 @@ plt.show()
 ```
 
 
-![png](StatisticalJungle_files/StatisticalJungle_7_0.png)
+
+![png](https://github.com/bkompa/bkompa.github.io/raw/master/images/StatisticalJungle_7_0.png)
 
 
 ### Student's t distribution ### 
@@ -154,7 +158,7 @@ plt.show()
 ```
 
 
-![png](StatisticalJungle_files/StatisticalJungle_9_0.png)
+![png](https://github.com/bkompa/bkompa.github.io/raw/master/images/StatisticalJungle_9_0.png)
 
 
 ### Gamma Distribution ### 
@@ -187,7 +191,7 @@ plt.show()
 ```
 
 
-![png](StatisticalJungle_files/StatisticalJungle_11_0.png)
+![png](https://github.com/bkompa/bkompa.github.io/raw/master/images/StatisticalJungle_11_0.png)
 
 
 ### Beta Distribution ### 
@@ -223,7 +227,7 @@ plt.show()
 ```
 
 
-![png](StatisticalJungle_files/StatisticalJungle_13_0.png)
+![png](https://github.com/bkompa/bkompa.github.io/raw/master/images/StatisticalJungle_13_0.png)
 
 
 ### Pareto Distribution ### 
@@ -243,7 +247,3 @@ And maybe if I'm feeling spunky I'll do some of the Chapter 2 exercises.
 Monday, I'll be covering CRLS Chapter 4: Solving Recurrences. 
 
 
-
-```python
-
-```
