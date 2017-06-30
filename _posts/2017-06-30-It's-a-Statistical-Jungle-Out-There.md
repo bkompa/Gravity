@@ -25,9 +25,8 @@ We can rearrange this rule and see $p(A|B) = \frac{p(A,B)}{p(B)}$.
 Baye's rule is perhaps the most important relation in statistics. 
 Baye's rule (or theorem) states: <br/>
 $$p(X=x|Y=y) = \frac{p(Y=y|X=x)p(X=x)}{\sum_{x'}p(X=x')p(Y=y|X=x')} $$ <br/>
-We can break this down into the likelihood,prior,and posterior. Let's go through these one by one. 
 
-The **prior** is $p(X=x)$ in the numerator. This represents our initial beliefs of the proability of $X$. What Baye's rule does is it updates our beliefs about $X$ given that $Y=y$ occurs. The **likelihood** is $p(Y=y|X=x)$ in the numerator. This represents the probability (or likelihood) that $Y=y$ occurs given our initial beliefs about $X$. Note that when you multiply the prior and likelihood together, Rule 2 above applies. The numerator is the joint proability $p(Y=y, X=x)$. The **posterior** is the left hand side (LHS) of the equation $p(X=x|Y=y)$. It's an update on the proability of X given that we have observed $Y$, which depends on X. 
+The **prior** is $p(X=x)$ in the numerator. This represents our initial beliefs of the proability of $X$. What Baye's rule does is it updates our beliefs about $X$ given that $Y=y$ occurs. The **likelihood** is $p(Y=y|X=x)$ in the numerator. This represents the probability (or likelihood) that $Y=y$ occurs given our initial beliefs about $X$. Note that when you multiply the prior and likelihood together, Rule 2 above applies. The numerator is the joint proability $p(Y=y, X=x)$. The **posterior** is the left hand side (LHS) of the equation $p(X=x|Y=y)$. It's an update on the proability of X given that we have observed $Y$, which depends on X.
 
 The term I neglected is the denominator. I know what you're thinking: "Ben HOW could you forget about the denominator." I get it. I really do. But by using Rule 2, we can see the denominator is the marginal likelihood of $Y$, $p(Y)$. This is a normalization constant so that $\int_{y}p(X=x|Y=y)dx = 1$.
 
@@ -41,9 +40,9 @@ Now I'll start our parade through the jungle of statistical distributions. There
 
 ### Binomial and Bernoulli Distributions ### 
 
-Imagine a coin that lands heads with a probability $\theta$. Let $X$ be the random variable representing the flip. Then we can use the Bernoulli distribution to describe this single coin flip: $$\mathrm{Ber}(x|\theta)= \theta^{x==1}(1-\theta)^{x==0} $$. 
+Imagine a coin that lands heads with a probability $\theta$. Let $X$ be the random variable representing the flip. Then we can use the Bernoulli distribution to describe this single coin flip: <br/>$$\mathrm{Ber}(x|\theta)= \theta^{x==1}(1-\theta)^{x==0}$$<br/>
 
-If we now let $X$ be the number of heads in $N$ trials then $X\in\{0,1,...,N\}$ and we use a Binomial distribution to characterize the probabilities that $X$ takes on any particular value. The probability mass function of the Binomial distribution is: $$\mathrm{Bin}(X|n,\theta) = {n\choose x}{\theta}^x(1-\theta)^{n-x}$$ The mean of the distribution is $n\theta$ and the variance is $n\theta(1-\theta)$.
+If we now let $X$ be the number of heads in $N$ trials then $X\in\{0,1,...,N\}$ and we use a Binomial distribution to characterize the probabilities that $X$ takes on any particular value. The probability mass function of the Binomial distribution is: <br/>$$\mathrm{Bin}(X|n,\theta) = {n\choose x}{\theta}^x(1-\theta)^{n-x}$$<br/>The mean of the distribution is $n\theta$ and the variance is $n\theta(1-\theta)$.
 
 Below you can see the probability mass function for a binomial distribution with $n=10$ and $\theta=.5$.
 
