@@ -70,11 +70,11 @@ plt.show()
 
 ### Multinomial and Multinoulli distributions ### 
 
-Next, we can generalize the binomial and Bernoulli distributions when there is a more than 2 choices are what values $X_i$ can take. A classic exampmle of this is dice, which take 6 values. Assume $X$ is a vector with $K$ elements representing the total number of times the $k^{th}$ choice was hit. We write the multinomial pmf as: 
-$$ \mathrm{Mu}(x|n,\theta) = {n \choose {x_1,...,x_k}} \Pi^{K}_{j=1} {\theta}^{x_j}_{j} $$ where $$ {n \choose {x_1,...,x_k}} = \frac{n!}{\Pi^{K}_{j=1} x_{j}!}$$ In the case $n=1$, this is a multinoulli distribution. 
+Next, we can generalize the binomial and Bernoulli distributions when there is a more than 2 choices are what values $X_i$ can take. A classic exampmle of this is dice, which take 6 values. Assume $X$ is a vector with $K$ elements representing the total number of times the $k^{th}$ choice was hit. We write the multinomial pmf as: <br/>
+$$ \mathrm{Mu}(x|n,\theta) = {n \choose {x_1,...,x_k}} \Pi^{K}_{j=1} {\theta}^{x_j}_{j} $$ <br/>where $$ {n \choose {x_1,...,x_k}} = \frac{n!}{\Pi^{K}_{j=1} x_{j}!}$$ In the case $n=1$, this is a multinoulli distribution. 
 
 ### Poisson Distribution ### 
-The Poisson Distribution is often used to model events which rare events. Let $X$ be the counts of some event so $X\in \{0,1,...,\infty\}$ with a parameter $\lambda>0$. Then the pmf of a Poisson distribution is: $$\mathrm{Poi}(x=k|\lambda) = \frac{\mathrm{e}^{-\lambda}\lambda^k}{k!} $$
+The Poisson Distribution is often used to model events which rare events. Let $X$ be the counts of some event so $X\in \{0,1,...,\infty\}$ with a parameter $\lambda>0$. Then the pmf of a Poisson distribution is: <br/>$$\mathrm{Poi}(x=k|\lambda) = \frac{\mathrm{e}^{-\lambda}\lambda^k}{k!} $$ <br/> 
 
 Below you can see a couple pmfs with $\lambda = .1, .5, 5, 10$.
 
@@ -110,7 +110,7 @@ plt.show()
 
 
 ### The King of the Jungle: The Gaussian Distribution ### 
-The Gaussian distribution (a.k.a. the Normal distribution) is quite possibly the most important distribution in all of statistics. It has some nice properties that make it very useful in statistics and machine learning. It also describes a lot of processes in life. Without further ado, here is the pmf in it's full glory: $$\mathcal{N}(x|\mu,\sigma^2) = \frac{1}{\sqrt{2\pi{\sigma}^2}} \mathrm{e}^{\frac{-(x-\mu)^2}{2\sigma^2}} $$
+The Gaussian distribution (a.k.a. the Normal distribution) is quite possibly the most important distribution in all of statistics. It has some nice properties that make it very useful in statistics and machine learning. It also describes a lot of processes in life. Without further ado, here is the pmf in it's full glory: <br/>$$\mathcal{N}(x|\mu,\sigma^2) = \frac{1}{\sqrt{2\pi{\sigma}^2}} \mathrm{e}^{\frac{-(x-\mu)^2}{2\sigma^2}} $$<br/>
 Where $\mu$ is the mean and $\sigma$ is the standard deviation. See below for a classical standard normal: mean of 0, variance of 1
 
 
@@ -133,7 +133,7 @@ plt.show()
 
 ### Student's t distribution ### 
 
-The Gaussian distribution has at least one problem: it needs to eat a hamburger. That's right, it's too skinny. Specifically, it's tails are too skinny. This means a Gaussian distribution is very sensitive to outliers. To solve this, we use a t distribution. It's pmf is: $$\mathcal{T}(x|\mu, \sigma^2, \nu) \propto (1+\frac{1}{\nu}(\frac{x-\mu}{\sigma})^2)^{\frac{-\nu-1}{2}}$$ It has mean $\mu$ and variance $\frac{\nu\sigma^2}{(\nu-2)}$. $\nu$ is the "degrees of freedom" of the distribution. In common applications of the t distribution this is often 1 less than the sample size. 
+The Gaussian distribution has at least one problem: it needs to eat a hamburger. That's right, it's too skinny. Specifically, it's tails are too skinny. This means a Gaussian distribution is very sensitive to outliers. To solve this, we use a t distribution. It's pmf is: <br/>$$\mathcal{T}(x|\mu, \sigma^2, \nu) \propto (1+\frac{1}{\nu}(\frac{x-\mu}{\sigma})^2)^{\frac{-\nu-1}{2}}$$ <br/>It has mean $\mu$ and variance $\frac{\nu\sigma^2}{(\nu-2)}$. $\nu$ is the "degrees of freedom" of the distribution. In common applications of the t distribution this is often 1 less than the sample size. 
 
 
 ```python
@@ -163,7 +163,7 @@ plt.show()
 
 ### Gamma Distribution ### 
 
-For shape and rate parameters $a,b>0$, the gamma distribution is defined as: $$\mathrm{Gamma}(x|a,b) = \frac{b^a}{\Gamma(a)} x^{a-1}\mathrm{e}^{-bx}$$
+For shape and rate parameters $a,b>0$, the gamma distribution is defined as: <br/>$$\mathrm{Gamma}(x|a,b) = \frac{b^a}{\Gamma(a)} x^{a-1}\mathrm{e}^{-bx}$$<br/>
 The gamma distribution has a variety of real world application like modeling rainfall or spikes in neuron activity. Several gamma distributions are shown below with varying shape parameters.
 
 The gamma distribution is a generalization of the exponential distribution, which models the time in between events of  Poisson process. Simply let $a=1$ and $b=\lambda$. It is also the generalization of a chi-squared distribution with $\nu$ degree of freedom. Let $a=.5\nu$ and $b=.5$. 
@@ -195,7 +195,7 @@ plt.show()
 
 
 ### Beta Distribution ### 
-The beta distribution's pmf is: $$\mathrm{Beta}(x|a,b)=\frac{1}{B(a,b)}x^{a-1}(1-x)^{b-1}$$ Where $B(a,b)=\frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}$. It is defined on $x\in[0,1]$. The beta distribution is very useful in Bayesian analysis since it's the conjugate prior of the binomial distribution -- but for more on that you'll have to wait for my next MLPP blog post. Below are some beta distributions, a recreation of Figure 2.10 in MLPP 
+The beta distribution's pmf is: <br/>$$\mathrm{Beta}(x|a,b)=\frac{1}{B(a,b)}x^{a-1}(1-x)^{b-1}$$<br/> Where $B(a,b)=\frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}$. It is defined on $x\in[0,1]$. The beta distribution is very useful in Bayesian analysis since it's the conjugate prior of the binomial distribution -- but for more on that you'll have to wait for my next MLPP blog post. Below are some beta distributions, a recreation of Figure 2.10 in MLPP 
 
 
 ```python
@@ -231,7 +231,7 @@ plt.show()
 
 
 ### Pareto Distribution ### 
-The pmf of the Pareto distribution is: $$\mathrm{Pareto}(x|k,m)=km^kx^{-(k+1)}\mathcal{I}(x\geq m)$$ Where $\mathcal{I}$ is my janky indicator function Latex solution because ipython notebook doesn't have mathbb and $m$ is a minimum value for $x$, and $k$ controls how much $x$ can exceed $m$.
+The pmf of the Pareto distribution is: <br/>$$\mathrm{Pareto}(x|k,m)=km^kx^{-(k+1)}\mathcal{I}(x\geq m)$$<br/> Where $\mathcal{I}$ is my janky indicator function Latex solution because ipython notebook doesn't have mathbb and $m$ is a minimum value for $x$, and $k$ controls how much $x$ can exceed $m$.
 
 # Next MLPP Post # 
 I know I said a little further above I would post about conjugate priors in the next MLPP post but I'm actually going to cut off here with a little bit of Chapter 2 left. Next time I cover MLPP I'll go over:
