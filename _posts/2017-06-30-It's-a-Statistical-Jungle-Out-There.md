@@ -12,7 +12,7 @@ When we talk about a probability $p(A)$ we are considering the chance that the e
 A few more basic rules: 
 1. $p(A\cup{B}) = p(A) + p(B) - p(A\cap{B})$  
 Test 
-This states that the probability of A or ($\cup$) B is equal to the proabilities of $A$ and $B$ minus the probability that both $A$ and($\cap$) B happens. This makes sense -- we don't want to double count an event in the space $A$ or double count an event in space $B$ because it's in both spaces. 
+This states that the probability of A or ($\cup$) B is equal to the proabilities of $A$ and $B$ minus the probability that both $A$ and($\cap$) $B$ happen. This makes sense -- we don't want to double count an event in the space $A$ or double count an event in space $B$ because it's in both spaces. 
 
 2. $p(A,B) = p(A|B)p(B)$
 This states that the joint probability of A and B is equal to the probability that A occurs, given($|$) that B occurs times the probability that $B$ happens. 
