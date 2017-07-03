@@ -1,4 +1,7 @@
-
+---
+layout: post
+title: Divide and Conquer
+---
 Welcome back, let's dive in to CLRS Chapter 4: Divide and Conquer. As always, check out the original source for full details. 
 
 ### Motivation ###
@@ -104,7 +107,3 @@ Let's apply this to our maximum subarray problem. $T(n) = 2T(n/2) + \Theta(n)$. 
 Next time I cover CLRS, I'll be going over probabilistic analysis of algorithms. A cool intersection of statistics and computer science.  
 The next post will continue my coverage of chapter 2 of MLPP. Looking forward to some Information Theory! 
 
-
-```python
-
-```
