@@ -1,8 +1,8 @@
 ---
 layout: post
-title: The Junk Draw 
+title: The Junk Drawer 
 ---
-### A Junk Draw of Probability ### 
+### A Junk Drawer of Probability ### 
 This post will cover a couple important topics in probability theory. These are formulas I should always know, but rarely completely remember. I hope after covering these they'll stick a bit more! 
 
 #### Covariance and Correlation #### 
@@ -35,7 +35,7 @@ $$\mathbb{KL}(p||q) = \sum_{k=1}^K p_k \log\frac{p_k}{q_k}$$
 An extension of KL Divergence is mutual information:  
 $$\mathbb{I}(X;Y) = \mathbb{KL}(p(X,Y)||p(X)p(Y)) = \sum_x\sum_y p(x,y) \log\frac{p(X,Y)}{p(X)p(Y)}$$
 
-### Closing the Draw ###
+### Closing the Drawer ###
 
 These few formulas close out Chapter 2 of MLPP. In future posts, we will see how to apply them. Next MLPP post will cover Chapter 3: Generative models for discrete data. I think my next blog post will ocver CLRS Chapter 5: probabilistic analysis of algorithms 
 
