@@ -11,7 +11,7 @@ email: benkompa@gmail.com
 description: Machine Learning + CS + Bio 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://bkompa.github.io" # the base hostname & protocol for your site
-twitter_username: bkompa
+twitter_username: BenKompa
 github_username:  bkompa
 paginate: 5
 
