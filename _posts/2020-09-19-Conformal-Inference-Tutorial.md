@@ -150,7 +150,7 @@ for index, image in enumerate(X[:15]):
 ```
 
 
-![png](images/Conformal_Inference_Tutorial_8_0.png)
+![png](https://github.com/bkompa/bkompa.github.io/raw/master/images/Conformal_Inference_Tutorial_8_0.png)
 
 
 
@@ -224,7 +224,7 @@ plt.show()
 ```
 
 
-![png](images/Conformal_Inference_Tutorial_16_0.png)
+![png](https://github.com/bkompa/bkompa.github.io/raw/master/images/Conformal_Inference_Tutorial_16_0.png)
 
 
 ## Determine Valid Prediction Region
@@ -270,7 +270,7 @@ for index, image in enumerate(X_test[:N]):
 ```
 
 
-![png](images/Conformal_Inference_Tutorial_20_0.png)
+![png](https://github.com/bkompa/bkompa.github.io/raw/master/images/Conformal_Inference_Tutorial_20_0.png)
 
 
 But what happens if we mix images together to get examples that may be harder for the classifier to label? Let's try mixing Images 0 and 3. 
@@ -284,7 +284,7 @@ plt.show()
 ```
 
 
-![png](images/Conformal_Inference_Tutorial_22_0.png)
+![png](https://github.com/bkompa/bkompa.github.io/raw/master/images/Conformal_Inference_Tutorial_22_0.png)
 
 
 
@@ -336,7 +336,7 @@ print(f"Valid prediction region: {prediction_region}")
 ```
 
 
-![png](images/Conformal_Inference_Tutorial_28_0.png)
+![png](https://github.com/bkompa/bkompa.github.io/raw/master/images/Conformal_Inference_Tutorial_28_0.png)
 
 
     Valid prediction region: [[3]
