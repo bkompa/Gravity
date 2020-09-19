@@ -43,8 +43,6 @@ Bag $B$ must be **exchangable**. This means that all the examples $z_i\in B$ are
 
 One common definition of exchangibility is that for any premutation $\tau$ of the numbers $\{1,...,N\}$, the joint distribution of $P(z_1,...z_N)$ is the same as $P(z_{\tau (1)},...,z_{\tau (N)})$. 
 
-Another defintion of exchanagbility is that $P(z_i=a|B)=\frac{k}{N}$ where $|B|=N$ and $k$ is the number of times example $a$ appears in bag $B$. 
-
 There are also game theoretic notions of exchanability that come up a lot in conformal inference literature. Checkout [Shafer and Vovk 2008](http://jmlr.csail.mit.edu/papers/volume9/shafer08a/shafer08a.pdf) for a great treatment of those. 
 
 ## Valid Prediction region
