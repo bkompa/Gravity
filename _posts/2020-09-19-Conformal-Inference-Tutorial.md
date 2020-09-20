@@ -205,7 +205,7 @@ print(f"Test acc: {classifier.score(X_test, y_test)}")
 
 ## Calculate Nonconformity Scores
 
-Next, we have to calculate nonconformity scores $\alpha_i$ for each $z_i$ in the calibration set, where $\alpha_i = A(\hat{z}(B, x_i), z_i)$. We take $A$ to be the one minus probability of the class as predicted by the SVM. When $\hat{y}_i$ is the correct class, hopefully our nonconformity score will be low as $1-p(\hat{y}_i|x_i)$ should be close to 0 if we have a good classifier. 
+Next, we have to calculate nonconformity scores $\alpha_i$ for each $z_i$ in the calibration set
 
 
 ```
