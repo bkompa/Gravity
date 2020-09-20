@@ -343,11 +343,10 @@ Now, our valid prediction region is $\{3, 9\}$. This time, our conservative $\ep
 
 0. Divide the dataset into training set $Z_t$ calibration set $Z_c$
 1. Train a learner on training data 
-2. Calculate nonconformity scores $\alpha_i$ on calibration data 
-    * A common choice is $1-p(\hat{y}_i|x_i)$
+2. Calculate nonconformity scores $\alpha_i$ on calibration data, a common choice is $1-p(\hat{y}\_i | x_i )$
 3. Determine valid prediction regions for new data points 
     * For all labels $C$ calculate: 
-        $$P_{\hat{y}^{C_i}} = \frac{|\{j=t+1,...t+c: \alpha_j \geq \alpha_i^{\hat{y}^C_i}\}|}{|Z_c|+1} $$
+        $$P\_{\hat{y}^{C\_i}} = \frac{|\{j=t+1,...t+c: \alpha\_j \geq \alpha\_i^{\hat{y}^C\_i}\}|}{|Z\_c|+1} $$
     $$\Gamma_i^\epsilon = \{C=1,..,L|P_{\hat{y}^{C_i}}>\epsilon\}$$
 
 # Conformal Regression 
@@ -359,13 +358,13 @@ Conformal regression is largely the same idea as conformal prediction, but with 
 
 ## Conformal Regression Algorithm Summary
 
-0. Divide the dataset into training set $Z_t$ calibration set $Z_c$
+0. Divide the dataset into training set $Z\_t$ calibration set $Z\_c$
 1. Train a learner $h$. 
 2. Calculate nonconformity scores $\alpha_i$ on calibration data 
-  * A common choice is $A(B, z_i) = |y_i-h(x_i)|$. 
+  * A common choice is $A(B, z\_i) = |y\_i-h(x\_i)|$. 
   * This function needs to be partially invertible 
-  * Save these scores in _descending_ order such that $\alpha_1\geq \alpha_2 \geq ... \geq \alpha_{|Z_c|}$
-3. Fix a significance level $\epsilon$. Calculate $s=floor(\epsilon(|Z_c|+1))$. $s$ is the index of the $(1-\epsilon)$-percentile nonconformity score. 
+  * Save these scores in _descending_ order such that $\alpha\_1\geq \alpha\_2 \geq ... \geq \alpha\_{|Z\_c|}$
+3. Fix a significance level $\epsilon$. Calculate $s=floor(\epsilon(|Z\_c|+1))$. $s$ is the index of the $(1-\epsilon)$-percentile nonconformity score. 
 4. The valid prediction region for a new sample $x_i$ is: $$\Gamma_i^\epsilon = h(x_i) \pm \alpha_s$$
 
 
