@@ -343,11 +343,8 @@ Now, our valid prediction region is $\{3, 9\}$. This time, our conservative $\ep
 
 0. Divide the dataset into training set $Z_t$ calibration set $Z_c$
 1. Train a learner on training data 
-2. Calculate nonconformity scores $\alpha_i$ on calibration data, a common choice is $1-p(\hat{y}\_i | x_i )$
-3. Determine valid prediction regions for new data points 
-    * For all labels $C$ calculate: 
-        $$P\_{\hat{y}^{C\_i}} = \frac{|\{j=t+1,...t+c: \alpha\_j \geq \alpha\_i^{\hat{y}^C\_i}\}|}{|Z\_c|+1} $$
-    $$\Gamma_i^\epsilon = \{C=1,..,L|P_{\hat{y}^{C_i}}>\epsilon\}$$
+2. Calculate nonconformity scores $\alpha_i$ on calibration data, a common choice is $1-p(\hat{y}\_i | x\_i )$
+3. Determine valid prediction regions for new data points and for all labels $C$ calculate: $$P\_{\hat{y}^{C\_i}} = \frac{|\{j=t+1,...t+c: \alpha\_j \geq \alpha\_i^{\hat{y}^C\_i}\}|}{|Z\_c|+1} $$ $$\Gamma_i^\epsilon = \{C=1,..,L|P_{\hat{y}^{C_i}}>\epsilon\}$$
 
 # Conformal Regression 
 
