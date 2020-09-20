@@ -228,12 +228,8 @@ plt.show()
 ## Determine Valid Prediction Region
 
 Now we get to the real heart of the conformal algorithm. When classifying a new sample $x_i$ where we do not know the true label $y_i$ where there are $L$ possible labels, we calculate for $C=1,...,L$:
-$$P_{\hat{y}^{C_i}} = \frac{|\{j=t+1,...t+c: \alpha_j \geq \alpha_i^{\hat{y}^C_i}\}|}{|Z_c|+1} $$
-
-Let's break down what this means. First, $\alpha_i^{\hat{y}_i^C}$ is the nonconformity score for $\hat{z}_i = (x_i, \hat{y}_i)$ when $\hat{y}_i=C$. The numerator is the number of nonconformity scores in the calibration set that meet or exceed $\alpha_i^{\hat{y}_i^C}$. The denominator is the size of the calibration set plus one, as we have a new nonconformity score we are considering.
-
-We set: $$\Gamma_i^\epsilon = \{C=1,..,L|P_{\hat{y}^{C_i}}>\epsilon\}$$
-
+$$P_{\hat{y}^{C_i}} = \frac{|\{j=t+1,...t+c: \alpha_j \geq \alpha_i^{\hat{y}^C_i}\}|}{|Z_c|+1} $$ Let's break down what this means. First, $\alpha_i^{\hat{y}_i^C}$ is the nonconformity score for $\hat{z}_i = (x_i, \hat{y}_i)$ when $\hat{y}_i=C$. The numerator is the number of nonconformity scores in the calibration set that meet or exceed $\alpha_i^{\hat{y}_i^C}$. The denominator is the size of the calibration set plus one, as we have a new nonconformity score we are considering. We set: $$\Gamma_i^\epsilon = \{C=1,..,L|P_{\hat{y}^{C_i}}>\epsilon\}$$
+ 
 $P_{\hat{y}^{C_i}}$ is an empirical p-value. We set our valid prediction region to be the set of predicted labels with a p-value exceeding our significance level $\epsilon$
 
 
