@@ -8,7 +8,7 @@ Conformal inference is one way to obtain a prediction _region_ from a machine le
 Using conformal inference, we can assess: 
 
 *   How good is our classification/regression?
-*   For classification, what is $P(\hat{y}=y)$? For regression, what is $|\hat{y}-y|$?
+*   For classification, what is $P(\hat{y}=y)$? For regression, what is $\|\hat{y}-y\|$?
 *   **Do we trust the model?**
 
 Conformal inference can be used on most any classification or regression algorithm, including offline and online settings. 
