@@ -3,6 +3,8 @@ layout: post
 title: Conformal Inference Tutorial 
 ---
 
+Interact with this blog post at this [colab link!](https://colab.research.google.com/drive/1JU_5jEO3Y5W4CeGBOuWAD9e6bPGCi9Jq?usp=sharing)
+
 Conformal inference is one way to obtain a prediction _region_ from a machine learning algorithm. It allows us to have guaranteed confidence sets for prediction and guaranteed confidence intervals for regression under very mild assumptions. Conformal inference provides error bounds on a per-sample basis. 
 
 Using conformal inference, we can assess: 
@@ -339,31 +341,10 @@ print(f"Valid prediction region: {prediction_region}")
 
 Now, our valid prediction region is $\{3, 9\}$. This time, our conservative $\epsilon$ level has ensured that we capture all possible labels for this example. 
 
-## Conformal Prediction Algorithm Summary
-
-0. Divide the dataset into training set $Z_t$ calibration set $Z_c$
-1. Train a learner on training data 
-2. Calculate nonconformity scores $\alpha_i$ on calibration data, a common choice is $1-p(\hat{y}\_i | x\_i )$
-3. Determine valid prediction regions for new data points and for all labels $C$ calculate: $$P\_{\hat{y}^{C\_i}} = \frac{|\{j=t+1,...t+c: \alpha\_j \geq \alpha\_i^{\hat{y}^C\_i}\}|}{|Z\_c|+1} $$ $$\Gamma_i^\epsilon = \{C=1,..,L|P_{\hat{y}^{C_i}}>\epsilon\}$$
 
 # Conformal Regression 
 
-
-
-
 Conformal regression is largely the same idea as conformal prediction, but with a few tweaks to work for real valued $y_i$. We'll cover the basic algorithm here, but for a more detailed introduction see [this introduction](http://www.clrc.rhul.ac.uk/copa2017/presentations/CP_Tutorial_2017.pdf) or for a serious treatment, see [Lei et al.](http://www.stat.cmu.edu/~ryantibs/papers/conformal.pdf)
-
-## Conformal Regression Algorithm Summary
-
-0. Divide the dataset into training set $Z\_t$ calibration set $Z\_c$
-1. Train a learner $h$. 
-2. Calculate nonconformity scores $\alpha_i$ on calibration data 
-  * A common choice is $A(B, z\_i) = |y\_i-h(x\_i)|$. 
-  * This function needs to be partially invertible 
-  * Save these scores in _descending_ order such that $\alpha\_1\geq \alpha\_2 \geq ... \geq \alpha\_{|Z\_c|}$
-3. Fix a significance level $\epsilon$. Calculate $s=floor(\epsilon(|Z\_c|+1))$. $s$ is the index of the $(1-\epsilon)$-percentile nonconformity score. 
-4. The valid prediction region for a new sample $x_i$ is: $$\Gamma_i^\epsilon = h(x_i) \pm \alpha_s$$
-
 
 # References 
 
