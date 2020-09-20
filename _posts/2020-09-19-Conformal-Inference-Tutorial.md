@@ -110,7 +110,7 @@ The steps of conformal prediction are:
 
 ## Divide the Data Set 
 
-For conformal prediction to work, we'll need a training and validation data set. This prevents us from violating any exchangability assumptions. We'll denote the training data as $Z_t$ and calibration data $Z_c$. The sizes of these datasets are $|Z_t|$ and $|Z_c|$, respectively. 
+For conformal prediction to work, we'll need a training and validation data set. This prevents us from violating any exchangability assumptions. We'll denote the training data as $Z_t$ and calibration data $Z_c$. The sizes of these datasets are $\|Z_t\|$ and $\|Z_c\|$, respectively. 
 
 
 ```
